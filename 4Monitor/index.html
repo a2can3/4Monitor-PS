@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Preview</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #1e1e1e;
+            color: rgb(109, 109, 109);
+        }
+        #container {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        #webview {
+            flex-grow: 1;
+            border: none;
+        }
+        #url-bar {
+            text-align: center;
+            height: 40px;
+            padding: 0 20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 20%; /* 20% padding on the left and right */
+            background: rgb(44, 44, 44);
+        }
+        #url-input {
+    height: 36px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    border: 1px solid rgb(98, 98, 98);
+    border-radius: 10px;
+    background: rgb(44, 44, 44);
+    color: white;
+    font-size: 8px;
+    min-width: 150px;
+    line-height: normal; /* Center text vertically */
+    display: inline-flex; /* Align horizontally */
+}
+        .nav-button {
+            width: 35px;
+            padding: 2px;
+            background-color: rgb(16, 16, 16);
+            border: none;
+            color: white;
+            cursor: pointer;
+            margin-left: 0;
+            margin-right: 8px;
+            border-radius: 8px; /* Rounded edges */
+        }
+        #load-button {
+            padding: 2px 2px;
+            background-color: rgb(16, 16, 16);
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 8px; /* Rounded edges */
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <webview id="webview"></webview>
+        <div id="url-bar">
+            <button id="home-button" class="nav-button">⯌</button>
+            <button id="back-button" class="nav-button">⯇</button>
+            <button id="forward-button" class="nav-button">⯈</button>
+            <button id="reload-button" class="nav-button">↻</button>
+            <input type="text" id="url-input" placeholder="Enter URL here" />
+            <button id="load-button">Load URL</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

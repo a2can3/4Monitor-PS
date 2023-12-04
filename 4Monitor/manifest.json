@@ -1,0 +1,112 @@
+{
+  "id": "4-Monitor",
+  "name": "4Monitor",
+  "version": "0.0.1",
+  "main": "index.html",
+  "manifestVersion": 5,
+  "host": {
+    
+      "app": "PS",
+      "minVersion": "24.6.0"
+  },
+
+  "requiredPermissions": {
+    "webview": {
+      "allow": "yes",
+      "domains": "all",
+      "enableMessageBridge": "no"
+    }
+    
+  },  
+  "entrypoints": [
+    {
+      "type": "panel",
+      "id": "mainPanel",
+      "label": "4Monitor",
+      "minimumSize": {
+        "width": 600,
+        "height": 420
+      },
+      "maximumSize": {
+        "width": 1920,
+        "height": 1080
+      },
+      "preferredDockedSize": {
+        "width": 1280,
+        "height": 720
+      },
+      "preferredFloatingSize": {
+        "width": 1280,
+        "height": 720
+      },
+      "icons": [
+        {
+          "width": 32,
+          "height": 32,
+          "path": "images/icon@1x.png",
+          "scale": [
+            1,
+            2
+          ],
+          "theme": [
+            "dark",
+            "darkest"
+          ],
+          "species": [
+            "generic"
+          ]
+        },
+        {
+          "width": 32,
+          "height": 32,
+          "path": "images/icon@2x.png",
+          "scale": [
+            1,
+            2
+          ],
+          "theme": [
+            "lightest",
+            "light"
+          ],
+          "species": [
+            "generic"
+          ]
+        }
+      ]
+    }
+  ],
+  "icons": [
+    {
+      "width": 32,
+      "height": 32,
+      "path": "images/icon@1x.png",
+      "scale": [
+        1,
+        2
+      ],
+      "theme": [
+        "dark",
+        "darkest"
+      ],
+      "species": [
+        "generic"
+      ]
+    },
+    {
+      "width": 32,
+      "height": 32,
+      "path": "images/icon@2x.png",
+      "scale": [
+        1,
+        2
+      ],
+      "theme": [
+        "lightest",
+        "light"
+      ],
+      "species": [
+        "generic"
+      ]
+    }
+  ]
+}
