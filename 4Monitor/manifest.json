@@ -7,7 +7,7 @@
   "host": {
     
       "app": "PS",
-      "minVersion": "24.6.0"
+      "minVersion": "22.0.0"
   },
 
   "requiredPermissions": {
